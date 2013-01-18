@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+        <title>IFX Informatrix | Con todo el power!!!</title>
+        <link href="jquery-mobile/jquery.mobile.theme-1.2.0.min.css" rel="stylesheet" type="text/css"/>
+		<link href="jquery-mobile/jquery.mobile.structure-1.2.0.min.css" rel="stylesheet" type="text/css"/>
+		<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="jquery-mobile/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
+        <script src="phonegap/phonegap-1.4.1.js" type="text/javascript"></script>
+        <script src="http://debug.phonegap.com/target/target-script-min.js#WebSite"></script>
+        <script>
+
+document.addEventListener("deviceready", function() {
+	// Reproducir un beep
+	navigator.notification.beep(2);
+	
+	// Vibrar el equipo
+	navigator.notification.vibrate(400);
+	
+	// Mensaje de alerta
+	navigator.notification.alert("Este es un mensaje", function() {
+		
+	}, "IFXPeru - Mensaje", "Aceptar");
+	
+}, false);
+
+</script>
+
+    </head>
+    <body>
+    	<!--************** home page starts here ****************-->
+	<div data-role="page" id="home" data-theme="c">
+
+	<!--************** home header start****************-->
+	<div data-role="header" data-theme="a" id="logo">
+        <div data-role="navbar">
+            <ul> 
+            	<li><a href="#home" data-theme="a">
+              		<img src="jquery-mobile/images/logoReload.png" width="300" height="80">
+                  </a>
+              </li>
+            </ul>      
+   		</div>
+    </div>
+    <!--************** home header end****************-->
+    
+    
+    <!--************** home content area start****************-->
+	<div data-role="content" data-theme="c" >  		
+		<ul data-role="listview">
+		  <li>
+          	<a href="#blogger">
+          		<img src="jquery-mobile/images/Blogger.png" alt="Bloggers" width="70" height="80">Blogger
+            	<span class="ui-li-count">4</span>
+            </a>
+          </li>
+          <li>
+          	<a href="#contacto">
+          		<img src="jquery-mobile/images/Contact.png" alt=""  width="70" height="80">Contacto 
+          	</a>
+          </li>
+		  <li><a href="#nosotros" rel="external"><img src="jquery-mobile/images/About.png" width="70" height="80">Sobre Nosotros
+            </a>
+          </li>
+          <li>
+          	<a href="#ubicar"><img src="jquery-mobile/images/Location Marker.png" alt="" width="70" height="80">Ubicanos
+            </a>
+          </li>
+	  </ul>		
+</div>
+    <!--************** home content area end****************-->
+    <!--************** home footer start****************-->
+<div data-role="footer" data-theme="a">
+   		<div data-role="navbar" data-theme="a" >
+            <ul> 
+                <li><a href="#home" class="ui-btn-active" data-icon="home">Inicio</a></li>
+                <li><a href="#tours" data-icon="grid">Blogger</a></li> 
+                <li><a href="#aboutus" data-icon="info">Sobre Nosotros</a></li>
+            </ul> 
+</div>
+    		<p align="center" class="copyright">&copy; 2013 IFX Informatrix - Per&uacute;</p>
+    </div>
+    <!--************** home footer end****************-->
+    
+</div>
+<!--************** home page ends here ****************-->
+
+
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.WebSite.phonegap" version="1.0">
+
+	<name>IFXPERU</name>
+	
+	<description>Esta es una aplicación de prueba para IFXPERU</description>
+	
+	<author href="http://firt.mobi" email="algo@algo.com">Max Firtman</author>
+	
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	
+	<preference name="orientation" value="landscape" />
+	
+	<gap:platform>
+		<gap:platform name="symbian.wrt" />
+		<gap:platform name="android" minVersion="2.3" />
+	</gap:platform>
+
+</widget>
